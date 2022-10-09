@@ -78,6 +78,8 @@ BOARD_SUPER_PARTITION_GROUPS := xiaomi_dynamic_partitions
 BOARD_XIAOMI_DYNAMIC_PARTITIONS_PARTITION_LIST := system vendor product
 BOARD_XIAOMI_DYNAMIC_PARTITIONS_SIZE := 9122611200 # TODO: Fix hardcoded value
 
+BOARD_PREBUILT_VENDORIMAGE := $(DEVICE_PATH)/prebuilts/vendor.img
+
 # Platform
 TARGET_BOARD_PLATFORM := mt6833
 
@@ -93,6 +95,9 @@ TARGET_USERIMAGES_USE_F2FS := true
 
 # Security patch level
 VENDOR_SECURITY_PATCH := 2021-08-01
+
+# Sepolicy
+TARGET_USES_PREBUILT_VENDOR_SEPOLICY := true
 
 # Verified Boot
 BOARD_AVB_ENABLE := true

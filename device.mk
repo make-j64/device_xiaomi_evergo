@@ -60,30 +60,6 @@ PRODUCT_USE_DYNAMIC_PARTITIONS := true
 PRODUCT_CHARACTERISTICS := default
 
 # Rootdir
-PRODUCT_PACKAGES += \
-
-PRODUCT_PACKAGES += \
-    fstab.mt6833 \
-    factory_init.project.rc \
-    factory_init.connectivity.rc \
-    meta_init.project.rc \
-    meta_init.connectivity.rc \
-    meta_init.rc \
-    factory_init.rc \
-    init.mt6833.rc \
-    multi_init.rc \
-    init.sensor_2_0.rc \
-    init.ago.rc \
-    init.project.rc \
-    meta_init.modem.rc \
-    init.mt6833.usb.rc \
-    init.aee.rc \
-    init.connectivity.rc \
-    init.modem.rc \
-    miui.factoryreset.rc \
-    init.recovery.mt6833.rc \
-    init.recovery.hardware.rc \
-
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/rootdir/etc/fstab.mt6833:$(TARGET_VENDOR_RAMDISK_OUT)/first_stage_ramdisk/fstab.mt6833
 
