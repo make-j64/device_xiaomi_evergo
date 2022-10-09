@@ -56,9 +56,6 @@ PRODUCT_ENFORCE_RRO_TARGETS := *
 PRODUCT_BUILD_SUPER_PARTITION := false
 PRODUCT_USE_DYNAMIC_PARTITIONS := true
 
-# Product characteristics
-PRODUCT_CHARACTERISTICS := default
-
 # Rootdir
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/rootdir/etc/fstab.mt6833:$(TARGET_VENDOR_RAMDISK_OUT)/first_stage_ramdisk/fstab.mt6833
