@@ -6,6 +6,8 @@
 
 DEVICE_PATH := device/xiaomi/evergo
 
+BUILD_BROKEN_DUP_RULES := true
+
 # A/B
 AB_OTA_UPDATER := true
 BOARD_USES_RECOVERY_AS_BOOT := true
