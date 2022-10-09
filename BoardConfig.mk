@@ -8,14 +8,16 @@ DEVICE_PATH := device/xiaomi/evergo
 
 # A/B
 AB_OTA_UPDATER := true
-AB_OTA_PARTITIONS += \
-    system \
-    vendor \
-    product \
-    boot \
-    vbmeta_vendor \
-    vbmeta_system
 BOARD_USES_RECOVERY_AS_BOOT := true
+AB_OTA_PARTITIONS += \
+    boot \
+    dtbo \
+    product \
+    system \
+    vbmeta \
+    vbmeta_system \
+    vbmeta_vendor \
+    vendor
 
 # Architecture
 TARGET_ARCH := arm64
