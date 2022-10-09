@@ -14,6 +14,10 @@ $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 # Inherit from evergo device
 $(call inherit-product, device/xiaomi/evergo/device.mk)
 
+# Boot animation
+TARGET_SCREEN_HEIGHT := 2400
+TARGET_SCREEN_WIDTH := 1080
+
 PRODUCT_DEVICE := evergo
 PRODUCT_NAME := lineage_evergo
 PRODUCT_BRAND := Redmi
